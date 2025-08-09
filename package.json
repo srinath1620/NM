@@ -1,0 +1,68 @@
+{
+  "name": "mars-forms",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=18.17.1 <19.0.0"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "gulp bundle",
+    "clean": "gulp clean",
+    "test": "gulp test",
+    "serve": "fast-serve",
+    "lint": "eslint -f table \"src/**/*.{ts,js,tsx,jsx}\"",
+    "lint:html": "eslint -f html \"src/**/*.{ts,js,tsx,jsx}\" -o ./eslint/index.html",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,scss}\"",
+    "lint-staged": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "npm run lint",
+      "git add --force"
+    ],
+    "*.{ts,tsx,js,jsx,json,css,scss}": [
+      "npm run format",
+      "git add --force"
+    ]
+  },
+  "dependencies": {
+    "@fluentui/react": "^8.106.4",
+    "@microsoft/decorators": "1.19.0",
+    "@microsoft/sp-core-library": "1.19.0",
+    "@microsoft/sp-listview-extensibility": "1.19.0",
+    "@microsoft/sp-lodash-subset": "1.19.0",
+    "@microsoft/sp-office-ui-fabric-core": "1.19.0",
+    "@pnp/sp": "^4.7.0",
+    "@pnp/spfx-controls-react": "^3.20.0",
+    "@types/react": "^17.0.45",
+    "html2canvas": "^1.4.1",
+    "moment": "^2.30.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "tslib": "2.3.1",
+    "uninstall": "^0.0.0",
+    "zustand": "^4.1.5"
+  },
+  "devDependencies": {
+    "@microsoft/eslint-config-spfx": "1.20.1",
+    "@microsoft/eslint-plugin-spfx": "1.20.1",
+    "@microsoft/rush-stack-compiler-4.7": "0.1.0",
+    "@microsoft/sp-build-web": "1.20.1",
+    "@microsoft/sp-module-interfaces": "1.20.1",
+    "@rushstack/eslint-config": "2.5.1",
+    "@types/react-dom": "17.0.17",
+    "@types/webpack-env": "~1.15.2",
+    "ajv": "^6.12.5",
+    "eslint": "^8.7.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "gulp": "4.0.2",
+    "spfx-fast-serve-helpers": "~1.19.0",
+    "typescript": "4.7.4"
+  }
+}

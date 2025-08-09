@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://reddy162.sharepoint.com/newmars/mars/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "32b7bb18-6ec0-4ea6-9836-0832e8ae576f",
+        "PageType": 8,
+        "RootFolder": "/sites/mars/Lists/MarsRequests/",
+        "properties": {
+          "sampleText": "Value"
+        }
+      }
+    },
+    "marsForms_NewForm": {
+      "pageUrl": "https://reddy162.sharepoint.com/newmars/mars/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "32b7bb18-6ec0-4ea6-9836-0832e8ae576f",
+        "PageType": 8,
+        "RootFolder": "/sites/mars/Lists/MarsRequests/",
+        "properties": {
+          "sampleText": "Value"
+        }
+      }
+    },
+    "marsForms_EditForm": {
+      "pageUrl": "https://reddy162.sharepoint.com/newmars/mars/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "32b7bb18-6ec0-4ea6-9836-0832e8ae576f",
+        "PageType": 6,
+        "RootFolder": "/sites/mars/Lists/MarsRequests/",
+        "ID": 1,
+        "properties": {
+          "sampleText": "Value"
+        }
+      }
+    },
+    "marsForms_ViewForm": {
+      "pageUrl": "https://reddy162.sharepoint.com/newmars/mars/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "32b7bb18-6ec0-4ea6-9836-0832e8ae576f",
+        "PageType": 4,
+        "RootFolder": "/sites/mars/Lists/MarsRequests/",
+        "ID": 1,
+        "properties": {
+          "sampleText": "Value"
+        }
+      }
+    }
+  }
+}

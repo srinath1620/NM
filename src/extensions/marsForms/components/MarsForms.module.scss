@@ -1,0 +1,220 @@
+.marsForms {
+  width: 75%;
+  margin: 2%;
+  padding-bottom: 15%;
+
+  input,
+  textarea {
+    // background: none !important;
+    color: black;
+  }
+
+  .sectionHeader {
+    background-color: #4379b5 !important;
+    height: 38px !important;
+  }
+
+  .sectionHeader > div:hover {
+    background-color: #4379b5 !important;
+    height: 36px !important;
+  }
+
+  .sectionHeader > div {
+    color: white;
+    font-weight: bold;
+    line-height: 2.2rem;
+    font-size: 13px;
+    height: 38px !important;
+  }
+
+  .accordion__button::after {
+    margin-top: 18px !important;
+  }
+
+  .marsInnerPanel {
+    border: 1px solid #4379b5;
+    border-top: 0px;
+    margin: 0px !important;
+    // padding-bottom: 2%;
+    padding: 5px;
+  }
+
+  .internalPanel {
+    //margin: 0.5rem 1rem 0rem 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #4379b5;
+    padding-bottom: 0.5rem;
+  }
+
+  .internalHeader {
+    background-color: #4379b5 !important;
+    height: 38px !important;
+    color: white;
+    font-weight: bold;
+    line-height: 38px;
+    padding-left: 10px;
+  }
+
+  .MarsTwoCol {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .MarsTwoCol > label {
+    width: 25%;
+    background-color: #f5f5f5;
+    border: 1px solid #0000002e;
+    text-align: right;
+    text-indent: 4px;
+    font-weight: bold;
+    padding-right: 4px;
+  }
+
+  .MarsTwoCol > div {
+    padding: 0.2rem;
+    min-width: 35%;
+    max-width: 70%;
+  }
+
+  .errorContainer {
+    padding-top: 8px;
+  }
+
+  .errMessage {
+    background-color: rgba(164, 38, 44, 0.9);
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 2%;
+    width: 70%;
+    margin-left: 6px;
+    font-weight: bold;
+  }
+
+  .errorMessage {
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 2px 0px 0px 2px;
+  }
+
+  .originalInformation {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .originalInformation > div {
+    width: 19%;
+  }
+
+  .horizonalControl {
+    padding-top: 2%;
+  }
+
+  .horizontalLine {
+    border-color: #4379b5;
+    background-color: #4379b5;
+    margin: 1rem 0.5rem 0rem 0.5rem;
+  }
+
+  .originalInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0.5rem;
+  }
+
+  .originalInfo > div {
+    width: 49%;
+  }
+
+  .newInformation {
+    margin: 0.6rem;
+  }
+
+  .merchApproval,
+  .dcApproval {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+
+  .merchApprPplCntrl,
+  .merchApprSign {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .merchApprPplCntrl > div {
+    width: 28%;
+  }
+
+  .merchApprSign > div {
+    width: 48%;
+  }
+
+  .merchRadio > div > div {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .merchHorzLine {
+    border-color: #4379b5;
+    background-color: #4379b5;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+
+  .peopleControl {
+    display: block;
+    // min-width: 22rem;
+  }
+
+  .dcApproval {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .dcApproval > div {
+    width: 49%;
+  }
+
+  .dcApproverComments {
+    margin: 0.8rem;
+  }
+
+  .fcOrgInfo {
+    width: 49%;
+    margin: 0rem 0.8rem 0rem 0.8rem;
+  }
+
+  .editFormBtns {
+    margin: 1%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.marsDispForm {
+  input,
+  textarea {
+    // background: none !important;
+    color: black;
+    font-size: 1rem;
+  }
+
+  .dispSecHeader {
+    border: 1px solid #4379b5;
+    padding: 1px;
+  }
+
+  .tableDispSection {
+    font-size: 1rem;
+  }
+}

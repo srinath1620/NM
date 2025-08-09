@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "mars-forms-form-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/marsForms/MarsFormsFormCustomizer.js",
+          "manifest": "./src/extensions/marsForms/MarsFormsFormCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MarsFormsFormCustomizerStrings": "lib/extensions/marsForms/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
